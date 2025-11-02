@@ -1,9 +1,12 @@
-const CACHE_NAME = 'buson-pwa-cache-v5';
+const CACHE_NAME = 'buson-pwa-cache-v3';
 // CAMINHOS AJUSTADOS
 const urlsToCache = [
     '/buson/',
     '/buson/index.html',
     '/buson/manifest.json',
+    '/buson/app.js',
+    '/buson/data.json',
+    '/buson/styles.css',
     '/buson/icon-192x192.png',
     '/buson/icon-512x512.png'
     // Adicione o caminho do seu GIF aqui se estiver local
