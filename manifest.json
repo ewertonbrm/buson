@@ -1,21 +1,22 @@
 {
-  "name": "BUSON",
-  "short_name": "BUSON",
-  "description": "Visualize o countdown e os horários offline para o próximo ônibus.",
-  "start_url": "/index.html",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#046122", /* Corrigido para #046122 */
-  "icons": [
-    {
-      "src": "/icon-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/icon-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ]
+    "name": "BusOn",
+    "short_name": "BusOn",
+    "description": "PWA para horários de ônibus.",
+    "start_url": "/buson/index.html",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#046122",
+    "icons": [
+        {
+            "src": "/buson/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/buson/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+
 }
