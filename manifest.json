@@ -1,19 +1,19 @@
 {
-  "name": "Próximo Ônibus",
-  "short_name": "Próximo Ônibus",
-  "description": "Visualize o countdown e os horários para o próximo ônibus.",
-  "start_url": "./index.html",
+  "name": "BUSON",
+  "short_name": "BUSON",
+  "description": "Visualize o countdown e os horários offline para o próximo ônibus.",
+  "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "theme_color": "#046122", /* Corrigido para #046122 */
   "icons": [
     {
-      "src": "./icon-192x192.png",
+      "src": "/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "./icon-512x512.png",
+      "src": "/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
