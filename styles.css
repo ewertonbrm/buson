@@ -1,0 +1,224 @@
+/* Reset Básico e Fonte Oswald */
+* { /* Reset universal para garantir box-sizing em todos os elementos */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #FFFFFF;
+    color: #333333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Correção para evitar o overflow horizontal do ambiente */
+    width: 100%; 
+    overflow-x: hidden; 
+}
+
+/* Largura Máxima Consistente para Conteúdo */
+/* Esta classe limita a largura estética (app-like) e centraliza o conteúdo */
+.content-wrapper {
+   
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 0 15px; /* Espaçamento interno lateral (em `px` para evitar somar à largura `100%`) */
+}
+
+/* Header */
+header {
+    background-color: #000000;
+    color: white;
+    padding: 20px 0; 
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%; 
+}
+
+.header-content { /* Usa a classe de largura máxima para centralizar o conteúdo */
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px; /* Padding interno para o conteúdo do header */
+}
+
+.header-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    border: 3px solid white;
+    object-fit: cover; 
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+/* Main Layout */
+main {
+    flex-grow: 1; 
+    padding: 25px 0; /* Padding vertical, horizontal 0 */
+    /* Garante que o main use a largura e padding do wrapper */
+    max-width: 500px; 
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Seletor de Linha */
+.selector-container {
+    margin-bottom: 25px;
+    background-color: #F8F8F8;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #DDDDDD;
+    margin: 0 15px 25px 15px; /* Adiciona margem lateral para que não encoste nas bordas da tela */
+}
+
+.selector-container label {
+    display: block;
+    font-size: 0.8rem;
+    color: #555555;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+#route-selector {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    appearance: none;
+    background-color: white;
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#route-selector:focus {
+    outline: none;
+    border-color: #000000;
+    box-shadow: 0 0 0 1px #000000;
+}
+
+/* Cartões de Informação */
+.info-card {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 20px 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid #E0E0E0;
+    margin: 0 15px 25px 15px; /* Adiciona margem lateral para que não encoste nas bordas da tela */
+}
+
+.label {
+    font-size: 0.9rem;
+    color: #555555;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.info-card h3 {
+    font-size: 3rem;
+    color: #000000;
+    margin: 0 0 20px 0;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+#countdown-display {
+    font-size: 1.8rem;
+    color: #000000;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+.countdown-label {
+    margin-top: 15px;
+}
+
+.secondary-info {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #EEEEEE;
+}
+
+.secondary-info p {
+    font-size: 0.8rem;
+    color: #777777;
+    margin-bottom: 5px;
+}
+
+.secondary-info span {
+    font-weight: 500;
+    color: #333333;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+/* Botão de Atualização */
+#refresh-button {
+    width: calc(100% - 30px); /* 100% menos as margens laterais de 15px * 2 */
+    margin: 0 15px 25px 15px;
+    padding: 15px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.1s, transform 0.1s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 3px #333333;
+}
+
+#refresh-button:active {
+    background-color: #333333;
+    transform: translateY(2px);
+    box-shadow: 0 1px #333333;
+}
+
+/* Mensagem de Erro */
+.message-box {
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #f7eaea;
+    color: #cc0000;
+    border: 1px solid #e0baba;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    margin: 0 15px 20px 15px; /* Margem lateral */
+}
+
+/* Footer (Fonte dos Dados) */
+footer.data-source { 
+    text-align: center;
+    padding: 5px 0; /* Reduzido o padding vertical para eliminar espaço extra */
+    margin-top: auto;
+    border-top: 1px solid #EEEEEE;
+    background-color: #FAFAFA;
+    width: 100%; 
+}
+
+footer.data-source p {
+    font-size: 0.8rem;
+    color: #777777;
+    font-weight: 300;
+    /* Garante que o texto dentro do footer use o wrapper de largura máxima e padding lateral */
+    max-width: 500px;
+    padding: 0 15px; 
+    margin: 0 auto;
+}
