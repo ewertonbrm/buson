@@ -5,7 +5,6 @@ const urlsToCache = [
     '/buson/index.html',
     '/buson/manifest.json',
     '/buson/app.js',
-    '/buson/data.json',
     '/buson/styles.css',
     '/buson/icon-192x192.png',
     '/buson/icon-512x512.png'
@@ -55,3 +54,4 @@ self.addEventListener('activate', event => {
   );
 
 });
+
